@@ -12,6 +12,3 @@ int main(){
     cout<<"Result: "<<fact<<endl;
 }
 
-//write a program to take input of a index value and and value to add in given array
-//Fibbonacci series
-//Hot to do sum of all the the elements in array.
