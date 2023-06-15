@@ -1,20 +1,30 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
 
-//ceiling question
-// public static int ceiling(int[] arr, int target) {
-// int s = 0;
-// int e = arr.length - 1;
-// int ceil = -1;
+int ceiling(int[] arr, int n, int target){
+    int s=0;
+    int e=n-1;
+    int ceil=-1;
 
-// while(s <= e) {
-// int m = s + (e - s) / 2;
-// if(arr[m] == target)
-// return m;
-// else if (arr[m] < target)
-// s = m + 1;
-// else {
-// e = m - 1;
-// ceil = m;
-// }
-// }
-// return ceil;
-// }
+    while(s<=e){
+        int mid= s+(e-s)/2;
+        if(arr[mid]==target){
+            return mid;
+        }
+        else if(arr[mid]<target){
+            s=mid+1;
+        }
+        else{
+            e=mid-1;
+        }
+    }
+    return ceil;
+}
+
+int main(){
+    int target;
+    cin>>target;
+    int arr[8]={7,9,11,16,18,23,56,71};
+    cout<<ceiling(arr, target);
+}
