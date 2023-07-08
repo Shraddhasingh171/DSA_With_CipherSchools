@@ -17,8 +17,8 @@ using namespace std;
        }
 
 int main(){
-   vector<int>v={2,1,8,-4,5,8,5,3,7,4,0,-3,-5};
-
+    vector<int>v={2,1,8,-4,5,8,5,3,7,4,0,-3,-5};
+     
     cout<<maxsubarray(v)<<endl;
     return 0;
 
